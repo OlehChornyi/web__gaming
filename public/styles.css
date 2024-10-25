@@ -399,6 +399,87 @@ nav {
     color: var(--text-light);
 }
 
+.footer{
+    background-color: var(--text-dark);
+}
+
+.footer__container{
+    display: grid;
+    gap: 4rem 2rem;
+}
+
+.footer__logo{
+    margin-bottom: 2rem;
+}
+
+.footer__logo .logo{
+    color: var(--white);
+}
+
+.footer__col h4{
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.footer__links{
+    display: grid;
+    gap: 1rem;
+}
+
+.footer__links :is(li, a){
+    color: var(--text-light);
+}
+
+.footer__links a:hover{
+    color: var(--white);
+}
+
+.footer__links a span{
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.footer__col h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: var(--header-font);
+    color: var(--white);
+}
+
+.footer__col form{
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--text-light);
+    border-radius: 5px;
+}
+
+.footer__col input{
+    padding-inline: 1rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: transparent;
+}
+
+.footer__col form .btn{
+    background-color: var(--extra-light);
+    border-radius: 2px;
+}
+
+.footer__bar{
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    text-align: center;
+    border-top: 1px solid var(--text-light);
+}
+
 @media (width > 540px) {
     .feature__grid{
         grid-template-columns: repeat(2, 1fr);
@@ -406,6 +487,10 @@ nav {
 
     .banner__container{
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    .footer__container{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -507,5 +592,19 @@ nav {
         bottom: 0;
         transform: translate(0, -1rem) rotate(-90deg);
         transform-origin: left;
+    }
+
+    .footer__container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (width > 1024) {
+    .feature__card{
+        padding: 1.5rem;
+    }
+
+    .product__list{
+        gap: 2rem;
     }
 }
