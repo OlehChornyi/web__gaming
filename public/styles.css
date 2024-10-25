@@ -252,9 +252,53 @@ nav {
     color: var(--text-light);
 }
 
+.banner__container{
+    display: grid;
+    gap: 2rem;
+}
+
+.banner__card{
+    position: relative;
+    isolation: isolate;
+}
+
+.banner__card img{
+    max-width: 600px;
+    margin-inline: auto;
+    border-radius: 1rem;
+}
+
+.banner__card h4{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    max-width: 200px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.banner__card .btn{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--white);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
 @media (width > 540px) {
     .feature__grid{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner__container{
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
 }
 

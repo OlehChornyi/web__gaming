@@ -6,7 +6,7 @@ menuBtn.addEventListener("click", (e) => {
     navLinks.classList.toggle("open");
 
     const isOpen = navLinks.classList.contains("open");
-    menuBtnIcon.setAttribute("class", isOpen?"ri-close-line":"ri-menu-line");
+    menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
 });
 
 navLinks.addEventListener("click", (e) => {
@@ -15,14 +15,14 @@ navLinks.addEventListener("click", (e) => {
 });
 
 const scrollRevealOption = {
-    origin:"bottom",
-    distance:"50px",
+    origin: "bottom",
+    distance: "50px",
     duration: 1000,
 };
 
 ScrollReveal().reveal(".header__image img", {
     ...scrollRevealOption,
-    origin:"right",
+    origin: "right",
 });
 
 ScrollReveal().reveal(".header__content h1", {
@@ -63,4 +63,9 @@ ScrollReveal().reveal(".feature__card", {
     duration: 1000,
     interval: 500,
     delay: 2000,
+});
+
+ScrollReveal().reveal(".banner__card", {
+    ...scrollRevealOption,
+    interval: 500,
 });
