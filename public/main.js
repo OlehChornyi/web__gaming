@@ -74,3 +74,24 @@ ScrollReveal().reveal(".specs__card", {
     duration: 1000,
     interval: 500,
 });
+
+ScrollReveal().reveal(".product__content img", {
+    ...scrollRevealOption,
+    origin: "right",
+});
+
+ScrollReveal().reveal(".product__content p", {
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal(".product__btn", {
+    ...scrollRevealOption,
+    delay: 1000,
+});
+
+ScrollReveal().reveal(".product__list li", {
+    delay: 1500,
+    duration: 1000,
+    interval: 500, 
+});
