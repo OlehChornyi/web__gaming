@@ -39,3 +39,28 @@ ScrollReveal().reveal(".header__btns", {
     ...scrollRevealOption,
     delay: 1500,
 });
+
+ScrollReveal().reveal(".feature__content .section__subheader", {
+    ...scrollRevealOption,
+});
+
+ScrollReveal().reveal(".feature__content .section__header", {
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal(".feature__content p", {
+    ...scrollRevealOption,
+    delay: 1000,
+});
+
+ScrollReveal().reveal(".feature__btn", {
+    ...scrollRevealOption,
+    delay: 1500,
+});
+
+ScrollReveal().reveal(".feature__card", {
+    duration: 1000,
+    interval: 500,
+    delay: 2000,
+});
