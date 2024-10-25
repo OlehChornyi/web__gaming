@@ -292,6 +292,58 @@ nav {
     z-index: 1;
 }
 
+.specs{
+    background-color: #e1e8e1;
+    background-image: url(assets/specs.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.specs__container{
+    display: grid;
+    gap: 2rem;
+}
+
+.specs__card{
+    max-width: 300px;
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.specs__row:nth-child(1) .specs__card{
+    margin-left: auto;
+}
+
+.specs__card div{
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.specs__card span{
+    font-size: 1.5rem;
+    color: var(--text-light);
+    transition: 0.3s;
+}
+
+.specs__card:hover span{
+    color: var(--primary-color);
+}
+
+.specs__card h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.specs__card p{
+    color: var(--text-light);
+}
+
 @media (width > 540px) {
     .feature__grid{
         grid-template-columns: repeat(2, 1fr);
